@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk-alpine
+FROM nvarun.jfrog.io/ws-docker-virtual/openjdk:8-jdk-alpine
 RUN addgroup -S spring && adduser -S spring -G spring
 USER spring:spring
 ARG DEPENDENCY=target/dependency
